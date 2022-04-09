@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  font-size: 20px;
+}
+
+.centered {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid red;
+}
+
+.video-position {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid green;
+}
+
+#video-chat-container {
+  width: 100%;
+  background-color: black;
+  border: 1px solid yellow;
+}
+
+#local-video {
+  position: absolute;
+  height: 30%;
+  width: 30%;
+  bottom: 0px;
+  left: 0px;
+  border: 1px solid blue;
+}
+
+#remote-video {
+  height: 100%;
+  width: 100%;
+}
+.call_buttons_container {
+  position: absolute;
+  bottom: 10px;
+  left: 40vw;
+}
+
+.call_button_small {
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.call_button_large {
+  width: 75px;
+  height: 75px;
+  border-radius: 75px;
+  background: #fc5d5b;
+  transition: 0.3s;
+}

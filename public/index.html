@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebRTC</title>
+    <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body>
+    <div id="room-selection-container" class="centered">
+      <h1>WebRTC video conference</h1>
+      <label>Enter the id of the room you want to create or connect to</label>
+      <input id="room-input" type="text" />
+      <button id="connect-button">CONNECT</button>
+    </div>
+
+    <div id="video-chat-container" class="video-position" style="display: none">
+      <video id="local-video" autoplay="autoplay"></video>
+      <video id="remote-video" autoplay="autoplay"></video>
+    </div>
+    <div id="remote-video-grid"></div>
+    <div class='call_buttons_container display_none' id='call_buttons'>
+        <button class='call_button_small' id='mic_button'>
+            <img src='./images/mic.png' id='mic_button_image'></img>
+        </button>
+        <button class='call_button_small' id='camera_button'>
+            <img src='./images/camera.png' id='camera_button_image'></img>
+        </button>
+        <button class='call_button_small' id='hang_up_button'>
+            <img src='./images/hangUp.png'></img>
+        </button>
+        <button class='call_button_small' id='screen_sharing_button'>
+            <img src='./images/switchCameraScreenSharing.png'></img>
+        </button>
+        <button class='call_button_small' id='start_recording_button'>
+            <img src='./images/recordingStart.png'></img>
+        </button>
+    </div>
+
+   
+    <script src="./socket.io.js"></script>
+    <script type="text/javascript" src="client.js"></script>
+  </body>
+</html>

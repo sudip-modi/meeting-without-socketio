@@ -1,0 +1,21 @@
+{
+  "name": "acid-tango-webrtc",
+  "version": "1.0.0",
+  "description": "webrtc call app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "sudip modi",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "lodash": "^4.17.21",
+    "mongoose": "^6.2.10",
+    "nodemon": "^2.0.15",
+    "socket.io": "^4.4.1",
+    "uuid": "^8.3.2"
+  }
+}
