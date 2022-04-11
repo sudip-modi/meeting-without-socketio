@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "nodemon server.js"
   },
   "author": "sudip modi",
   "license": "ISC",
@@ -16,6 +16,11 @@
     "mongoose": "^6.2.10",
     "nodemon": "^2.0.15",
     "socket.io": "^4.4.1",
-    "uuid": "^8.3.2"
+    "uuid": "^8.3.2",
+    "ws": "^8.2.3"
+  },
+  "devDependencies": {
+    "express-pino-logger": "^7.0.0",
+    "pino": "^7.10.0"
   }
 }
